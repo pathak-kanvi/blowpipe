@@ -32,7 +32,7 @@ btn2.mouseClicked(blow);
 }
 
 function draw() {
-  background(59);
+  background("#99FF99");
   Engine.update(engine);
 
   blower.show();

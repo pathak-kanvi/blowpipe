@@ -16,7 +16,7 @@ class BlowerMouth {
     push();
     translate(pos.x, pos.y);
     rectMode(CENTER);
-    fill("#8d6e63");
+    fill("#FF9999");
     rect(0, 0, this.w, this.h);
     pop();
   }
