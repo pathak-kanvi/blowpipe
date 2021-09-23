@@ -1,12 +1,12 @@
 class Ball {
-  constructor(x, y, w, h) {
+  constructor(x, y, r) {
     let options = {
       restitution: 0.8
     };
 
-    this.body = Bodies.rectangle(x, y, w, h, options);
-    this.w = w;
-    this.h = h;
+    this.body = Bodies.circle(x,y,r,options)
+    this.r = r;
+  
 
     World.add(world, this.body);
   }
@@ -17,8 +17,8 @@ class Ball {
     push();
     translate(pos.x, pos.y);
     rotate(angle);
-    ellipseMode(CENTER);
-    ellipse(0, 0, this.w, this.h);
+    ellipseMode(RADIUS);
+    ellipse(0, 0, this.r,this.r);
     pop();
   }
 }
